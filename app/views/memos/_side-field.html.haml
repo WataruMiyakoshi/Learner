@@ -1,0 +1,19 @@
+.Side-field
+  .Side-header
+    .Side-box
+      .Side-box__menu
+        = link_to icon('fas', 'bars' ), destroy_user_session_path, method: :delete
+      .Side-box__search
+        %form.Search-form
+          %input.Search-form__area{ placeholder: "search" }
+      .Side-box__new
+        = icon('far', 'plus-square' )
+  .Side-content
+    .Tags
+      tag
+    .Content-list
+      .Comtent
+        .Content__title
+          title
+        .Content__first
+          はじめに...

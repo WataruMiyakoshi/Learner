@@ -1,0 +1,42 @@
+@import "modules/colors";
+@import "modules/height_width";
+
+.Main-field {
+  height: inherit;
+  width: calc(100vw - #{$side-width});
+  background-color: $field;
+  color: $font;
+  // border: 1px solid $field-border;
+
+  .Main-header {
+    height: $header;
+  }
+  .Memo-field {
+      height: calc(100% - #{$header});
+      width: 100%;
+  }
+}
+.Title-form, .Main-form {
+  height: 100%;
+  width: 100%;
+  &__area {
+    height: inherit;
+    width: inherit;
+    border: none;
+    resize: none;
+    outline: none;
+    background-color: $field;
+    color: $font;
+  }
+}
+.Title-form__area {
+  width: 100%;
+  padding: 0 15px;
+  line-height: $header;
+  font-size: 24px;
+  font-weight: bold;
+}
+.Main-form__area {
+  height: 100%t;
+  padding: 15px;
+}

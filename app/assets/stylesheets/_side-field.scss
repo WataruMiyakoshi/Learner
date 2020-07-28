@@ -1,0 +1,70 @@
+@import "modules/colors";
+@import "modules/height_width";
+
+.Side-field {
+  height: inherit;
+  width: $side-width;
+  background-color: $field;
+  color: $font;
+  border: 1px solid $field-border;
+
+}
+
+.Side-header {
+  height: $header;
+  width: inherit;
+  border-bottom: 1px solid $field-border;
+  line-height: $header;
+  .Side-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    &__menu {
+      width: 30px;
+      text-align: center;
+    }
+    &__search {
+      .Search-form {
+        &__area {
+          height: 24px;
+          width: calc(#{$side-width} - 100px);
+          border: 1px solid $font;
+          border-radius: 15px;
+          padding: 0 12px;
+          outline: none;
+          background-color: $field;
+          color: $font;
+        }
+      }
+    }
+    &__new {
+      width: 30px;
+      text-align: center;
+    }
+
+  }
+}
+
+.Side-content {
+  height: calc(100% - #{$header});
+  .Tags {
+    padding: 5px 15px;
+    font-size: 13px;
+    color: $font-inactive;
+    text-align: end;
+  }
+  .Content-list {
+    padding: 15px;
+    overflow: scroll;
+    .Content {
+      &__title{
+        font-weight: bold;
+      }
+      &__first{
+        padding-left: 15px;
+        font-size: 13px;
+        color: $font-inactive;
+      }
+    }
+  }
+}
