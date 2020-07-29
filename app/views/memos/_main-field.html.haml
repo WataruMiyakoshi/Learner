@@ -1,11 +1,26 @@
-%form.Memo
+= form_with model: [@memo], html: {class: "Memo"}, local: true do |f|
   .Main-header
     .Title
-      %input.Title-form{ placeholder: "add title" }
+      = f.text_field :title, class: "Title-form", placeholder: "add title"
     .Edit-btn
       = icon( 'far', 'trash-alt' )
   .Memo-field
-    %textarea.Memo-form{ placeholder: "put memo"}
+    = f.text_area :body, class: "Memo-form", placeholder: "put memo"
+
+
+
+
+
+
+
+-# %form.Memo
+-#   .Main-header
+-#     .Title
+-#       %input.Title-form{ placeholder: "add title" }
+-#     .Edit-btn
+-#       = icon( 'far', 'trash-alt' )
+-#   .Memo-field
+-#     %textarea.Memo-form{ placeholder: "put memo"}
 
 
 

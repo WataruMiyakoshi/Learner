@@ -2,7 +2,8 @@
   tag
 .Content-list
   .Comtent
-    .Content__title
-      title
-    .Content__first
-      はじめに...
+    - @memos.each do |memo|
+      .Content__title
+        = memo.title
+      .Content__first
+        = memo.body
