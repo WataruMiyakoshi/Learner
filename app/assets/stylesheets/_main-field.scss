@@ -10,6 +10,17 @@
 
   .Main-header {
     height: $header;
+    display: flex;
+    .Title {
+      width: calc(100% - #{$edit-btn});
+    }
+    .Edit {
+      width: $edit-btn;
+      padding-right: 30px;
+      line-height: $header;
+      text-align: right;
+      color: $font-inactive;
+    }
   }
   .Memo-field {
       height: calc(100% - #{$header});

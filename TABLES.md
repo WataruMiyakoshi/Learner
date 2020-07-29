@@ -13,6 +13,7 @@
 ## memoテーブル
 |Column|Type|Options|
 |------|----|-------|
+|title|string||
 |body|text||
 |image|string||
 |user_id|reference|null: false, foreign_key: true|
