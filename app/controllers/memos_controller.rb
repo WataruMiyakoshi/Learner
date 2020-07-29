@@ -1,11 +1,21 @@
 class MemosController < ApplicationController
   before_action :move_to_sign_in
+
   def index
-    @email = current_user.email
   end
+
   def new
-    
   end
+
+  def create
+  end
+
+  def show
+  end
+
+  def edit
+  end
+
 end
 
 private

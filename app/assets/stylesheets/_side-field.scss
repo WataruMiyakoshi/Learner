@@ -28,7 +28,7 @@
         &__area {
           height: 24px;
           width: calc(#{$side-width} - 100px);
-          border: 1px solid $font;
+          border: 1px solid $font-inactive;
           border-radius: 15px;
           padding: 0 12px;
           outline: none;

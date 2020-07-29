@@ -1,0 +1,20 @@
+%form.Memo
+  .Main-header
+    .Title
+      %input.Title-form{ placeholder: "add title" }
+    .Edit-btn
+      = icon( 'far', 'trash-alt' )
+  .Memo-field
+    %textarea.Memo-form{ placeholder: "put memo"}
+
+
+
+-# .Main-header
+-#   .Title
+-#     %form.Title-form
+-#       %input.Title-form__area{ placeholder: "add title#{@email}" }
+-#   .Edit
+-#     = icon('far', 'trash-alt' )
+-# .Memo-field
+-#   %form.Main-form
+-#     %textarea.Main-form__area{ placeholder: "Text..." }
