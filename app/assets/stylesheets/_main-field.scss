@@ -7,47 +7,52 @@
   background-color: $field;
   color: $font;
   // border: 1px solid $field-border;
-
-  .Main-header {
-    height: $header;
-    display: flex;
-    .Title {
-      width: calc(100% - #{$edit-btn});
-    }
-    .Edit {
-      width: $edit-btn;
-      padding-right: 30px;
-      line-height: $header;
-      text-align: right;
-      color: $font-inactive;
-    }
-  }
-  .Memo-field {
-      height: calc(100% - #{$header});
-      width: 100%;
-  }
-}
-.Title-form, .Main-form {
-  height: 100%;
-  width: 100%;
-  &__area {
+  .Memo {
     height: inherit;
     width: inherit;
-    border: none;
-    resize: none;
-    outline: none;
-    background-color: $field;
-    color: $font;
+    .Main-header {
+      height: $header;
+      display: flex;
+      .Title {
+        height: inherit;
+        width: calc(100% - #{$edit-btn});
+      }
+      .Edit-btn {
+        height: inherit;
+        width: $edit-btn;
+        padding-right: 30px;
+        line-height: $header;
+        text-align: right;
+        color: $font-inactive;
+      }
+    }
+    .Memo-field {
+        height: calc(100% - #{$header});
+        width: 100%;
+    }
   }
 }
-.Title-form__area {
+// .Title-form, .Main-form {
+//   height: 100%;
+//   width: 100%;
+.Title-form, .Memo-form {
+  height: inherit;
+  width: inherit;
+  border: none;
+  resize: none;
+  outline: none;
+  background-color: $field;
+  color: $font;
+}
+
+.Title-form {
   width: 100%;
   padding: 0 15px;
   line-height: $header;
   font-size: 24px;
   font-weight: bold;
 }
-.Main-form__area {
-  height: 100%t;
+.Memo-form {
+  height: 100%;
   padding: 15px;
 }

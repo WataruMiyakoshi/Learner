@@ -1,22 +1,24 @@
 :root{
   @media (prefers-color-scheme: light) {
-    --font: #333;
-    --font-inactive: #999;
+  // フォントカラー
+  --font: #555;
+  --font-inactive: #999;
 
-    --field: #F8F8F8;
-    --field-active: #FCFCFC;
-    --field-border: #DDD;
+  // Fieldカラー
+  --field: #F8F8F8;
+  --field-active: #FCFCFC;
+  --field-border: #DDD;
   }
   @media (prefers-color-scheme: dark) {
   // フォントカラー
-  --font: #DCDCDC;
-  --font-inactive: #878787;
+  --font: #DDD;
+  --font-inactive: #888;
 
-    // Fieldカラー
+  // Fieldカラー
   --field: #242424;
   --field-active: #CC942E;
   --field-border: #3A3A3A;
- }
+  }
 }
 
 // フォント
@@ -27,3 +29,15 @@ $font-inactive: var(--font-inactive);
 $field: var(--field);
 $field-active: var(--field-active);
 $field-border: var(--field-border);
+
+
+// リンクカラー
+a {
+  transition: color 0.15s;
+}
+a:hover {
+  color: $font;
+}
+a, a:active {
+  color: $font-inactive;
+}
