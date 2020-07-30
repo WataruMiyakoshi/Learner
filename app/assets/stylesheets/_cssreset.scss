@@ -111,3 +111,18 @@ select {
 legend {
 	color:#000;
 }
+
+
+input,
+button,
+textarea,
+select {
+  /* デフォルトスタイルをリセット */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+	appearance: none;
+}
+
+a {
+	cursor: default;
+}

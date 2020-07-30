@@ -4,19 +4,25 @@
   --font: #555;
   --font-inactive: #999;
 
+  // アクセントカラー
+  --accent: #e7b964;
+
   // Fieldカラー
   --field: #F8F8F8;
-  --field-active: #FCFCFC;
+  --field-active: #F5F5F5;
   --field-border: #DDD;
   }
   @media (prefers-color-scheme: dark) {
   // フォントカラー
-  --font: #DDD;
+  --font: #B4B4B4;
   --font-inactive: #888;
+
+  // アクセントカラー
+  --accent: #e3b46b;
 
   // Fieldカラー
   --field: #242424;
-  --field-active: #CC942E;
+  --field-active: #2f2f2f;
   --field-border: #3A3A3A;
   }
 }
@@ -24,6 +30,9 @@
 // フォント
 $font: var(--font);
 $font-inactive: var(--font-inactive);
+
+// アクセントカラー
+$accent: var(--accent);
 
 // Fieldカラー
 $field: var(--field);
@@ -34,10 +43,22 @@ $field-border: var(--field-border);
 // リンクカラー
 a {
   transition: color 0.15s;
+  text-decoration: none;
 }
 a:hover {
   color: $font;
 }
 a, a:active {
   color: $font-inactive;
+}
+
+/* auto complete(chrome) */
+input:-webkit-autofill {
+  /* 背景色(background-colorではなくbox-shadow) */
+  -webkit-box-shadow: 0 0 0 1000px $field inset;
+
+  /* 文字色(colorではなく-webkit-text-fill-color) */
+  -webkit-text-fill-color: $font !important;
+  /* 点滅しているアイツことカーソルくんの色(caret-color) */
+  caret-color: $font;
 }

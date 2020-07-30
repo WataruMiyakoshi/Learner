@@ -35,6 +35,9 @@
           background-color: $field;
           color: $font;
         }
+        &__area:hover {
+          border: 1px solid $font;
+        }
       }
     }
     &__new {
@@ -47,24 +50,29 @@
 
 .Side-content {
   height: calc(100% - #{$header});
-  .Tags {
-    padding: 5px 15px;
-    font-size: 13px;
-    color: $font-inactive;
-    text-align: end;
-  }
+  // .Tags {
+  //   padding: 5px 15px;
+  //   font-size: 13px;
+  //   color: $font-inactive;
+  //   text-align: end;
+  // }
   .Content-list {
-    padding: 15px;
     overflow: scroll;
     .Content {
       &__title{
+        padding: 20px 25px 0;
         font-weight: bold;
+        color: $font;
       }
       &__first{
-        padding-left: 15px;
-        font-size: 13px;
+        padding-left: 25px;
+        padding-bottom: 18px;
+        font-size: 12px;
         color: $font-inactive;
       }
+    }
+    .Content:hover {
+      background-color: $field-active;
     }
   }
 }

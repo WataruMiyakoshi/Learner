@@ -1,9 +1,23 @@
-.Tags
-  tag
-.Content-list
-  .Comtent
+.Side-header
+  .Side-box
+    .Side-box__menu
+      = link_to icon('fas', 'bars' ), destroy_user_session_path, method: :delete
+    .Side-box__search
+      = form_with( url: search_memos_path, method: :get, local: true, class: "Search-form" ) do |f|
+        = f.text_field :keyword, placeholder: "search", class: "Search-form__area"
+    .Side-box__new
+      = link_to icon('far', 'file-alt' ), new_memo_path, method: :get
+.Side-content
+  .Tags
+  .Content-list
     - @memos.each do |memo|
-      .Content__title
-        = memo.title
-      .Content__first
-        = memo.body
+      .Content
+        = link_to edit_memo_path(memo), method: :get do
+          .Content__title
+            = memo.title[0..13]
+            -if memo.title.length > 14
+              = "…"
+          .Content__first
+            = memo.body[0..26]
+            -if memo.body.length > 27
+              = "…"

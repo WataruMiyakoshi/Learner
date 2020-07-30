@@ -1,15 +1,5 @@
 .wrapper
   .Side-field
-    .Side-header
-      .Side-box
-        .Side-box__menu
-          = link_to icon('fas', 'bars' ), destroy_user_session_path, method: :delete
-        .Side-box__search
-          %form.Search-form
-            %input.Search-form__area{ placeholder: "search" }
-        .Side-box__new
-          = link_to icon('far', 'plus-square' ), new_memo_path, method: :get
-    .Side-content
-      = render "side-field"
+    = render "side-field"
   .Main-field
-    = render "main-field"
+    = render "main-field--new"

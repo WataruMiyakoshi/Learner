@@ -3,7 +3,8 @@
     .Title
       = f.text_field :title, class: "Title-form", placeholder: "add title"
     .Edit-btn
-      = icon( 'far', 'trash-alt' )
+      = link_to icon( 'far', 'trash-alt' ), memo_path(@memo.id), method: :get, class: "trash-icon"
+      = link_to icon( 'fas', 'times' ), root_path, class: "times-icon"
   .Memo-field
     = f.text_area :body, class: "Memo-form", placeholder: "put memo"
 

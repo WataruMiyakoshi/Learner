@@ -1,0 +1,8 @@
+= form_with model: [@memo], html: {class: "Memo"}, local: true do |f|
+  .Main-header
+    .Title
+      = f.text_field :title, class: "Title-form", placeholder: "add title"
+    .Edit-btn
+      = link_to icon( 'fas', 'times' ), root_path, class: "times-icon"
+  .Memo-field
+    = f.text_area :body, class: "Memo-form", placeholder: "put memo"

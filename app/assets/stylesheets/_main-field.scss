@@ -24,6 +24,20 @@
         line-height: $header;
         text-align: right;
         color: $font-inactive;
+        position: relative;
+        .times-icon {
+        }
+        .trash-icon {
+          line-height: 0;
+          position: absolute;
+          top: $header * 5 / 4;
+        }
+        .attention {
+          line-height: 0;
+          position: absolute;
+          top: $header * 4 / 3;
+          right: $edit-btn;
+        }
       }
     }
     .Memo-field {
@@ -35,24 +49,29 @@
 // .Title-form, .Main-form {
 //   height: 100%;
 //   width: 100%;
-.Title-form, .Memo-form {
-  height: inherit;
-  width: inherit;
+.Title-form,
+.Memo-form {
   border: none;
   resize: none;
   outline: none;
   background-color: $field;
   color: $font;
 }
+.Title-form:focus,
+.Memo-form:focus {
+  background-color: $field-active;
+}
 
 .Title-form {
-  width: 100%;
-  padding: 0 15px;
+  height: inherit;
+  width: calc(100vw - #{$side-width});
+  padding: 0  $edit-btn 0 15px;
   line-height: $header;
   font-size: 24px;
   font-weight: bold;
 }
 .Memo-form {
   height: 100%;
+  width: inherit;
   padding: 15px;
 }
