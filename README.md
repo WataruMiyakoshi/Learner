@@ -3,7 +3,7 @@
 Very simple memo application for learners.
 
 ## Description
----
+
 `Learner`, the name that meant for programming learners and to be the application created for my programming learning.
 This is my first application made with Haml, Scss and Rails.
 
@@ -14,7 +14,7 @@ Use for...
 
 Thanks for reading!
 ## Demo
----
+
 *How to post*
 ![Learner](https://user-images.githubusercontent.com/67892455/89055475-65d0ec00-d395-11ea-929c-1d2280153df5.gif)
 
@@ -25,12 +25,10 @@ Thanks for reading!
 *How to search*
 ![Learner3](https://user-images.githubusercontent.com/67892455/89055512-75503500-d395-11ea-8b9a-fc48c86054c1.gif)
 ## Licence
----
+
 (c) 2020 Wataru M.
 ## Author
----
 Wataru Miyakoshi
 ## Acknowledgments
----
 Inspiration / Let's go to [Simplenote.com](https://simplenote.com/)  
 I love it!
