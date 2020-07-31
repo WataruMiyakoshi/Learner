@@ -1,24 +1,28 @@
-# README
+# Learner
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Very simple memo application for learners.
 
-Things you may want to cover:
+## Description
+---
+`Learner`, the name that meant for programming learners and to be the application created for my programming learning.
+This is my first application used Haml, Scss and Rails.
 
-* Ruby version
+Use for...  
+* To make a note of what you have learned.
+* To summarize the learning contents before outputting to SNS.
+* To leave ideas and inspiration.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Thanks for reading!
+## Demo
+---
+*3 .gifs will be uploaded...*
+## Licence
+---
+(c) 2020 Wataru M.
+## Author
+---
+Wataru Miyakoshi
+## Acknowledgments
+---
+Inspiration / Let's go to [Simplenote.com](https://simplenote.com/)  
+I love it!

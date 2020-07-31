@@ -1,7 +1,6 @@
 .Side-header
   .Side-box
     .Side-box__menu
-    -# ハンバーガーメニューのiconは'bars'で指定します
       = link_to icon('fas', 'sign-out-alt' ), destroy_user_session_path, method: :delete
     .Side-box__search
       = form_with( url: search_memos_path, method: :get, local: true, class: "Search-form" ) do |f|
