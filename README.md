@@ -15,8 +15,14 @@ Use for...
 Thanks for reading!
 ## Demo
 ---
+*How to post*
 ![Learner](https://user-images.githubusercontent.com/67892455/89055475-65d0ec00-d395-11ea-929c-1d2280153df5.gif)
+
+
+*Supports light mode and dark mode*
 ![Learner2](https://user-images.githubusercontent.com/67892455/89055489-6c5f6380-d395-11ea-99f6-9b2981d4b0b5.gif)
+
+*How to search*
 ![Learner3](https://user-images.githubusercontent.com/67892455/89055512-75503500-d395-11ea-8b9a-fc48c86054c1.gif)
 ## Licence
 ---
