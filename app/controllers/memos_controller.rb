@@ -59,6 +59,6 @@ def memo_params
 end
 
 def set_memo
-  memos = Memo.includes(:user).order("created_at DESC")
-  @memos = current_user.memos
+  memos = Memo.includes(:user)
+  @memos = current_user.memos.order("created_at ASC")
 end

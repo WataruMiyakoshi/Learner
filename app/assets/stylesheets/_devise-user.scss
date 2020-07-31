@@ -1,0 +1,105 @@
+@import "modules/colors";
+@import "modules/height_width";
+.User {
+  height: inherit;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  .User-field{
+    width: 310px;
+    padding: 5px;
+    color: $font-inactive;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__menu {
+      font-size: 20px;
+    }
+    .User-form {
+      position: relative;
+      font-size: 14px;
+      .field {
+        padding: 10px 0;
+        &--current {
+          margin-top: 10px;
+        }
+      }
+      .actions {
+        text-align: center;
+        .btn {
+          margin: 15px 0 0;
+          height: 24px;
+          width: 116px;
+          font-size: 14px;
+          &:active {
+            transform: translateY(1px);
+            background-color: $accent;
+            color:  $font-accent;
+          }
+        }
+      }
+      &--unhappy {
+        position: absolute;
+        right: 18px;
+        bottom: 60px;
+        font-size: 12px;
+      }
+      &--unhappy2 {
+        height: 22px;
+        width: 108px;
+        font-size: 13px;
+        outline: none;
+        position: absolute;
+        right: 15px;
+        bottom: 28px;
+        &:active {
+          transform: translateY(1px);
+          background-color: $field-active;
+        }
+      }
+    }
+    .end-link {
+      margin-top: 30px;
+    }
+  }
+}
+.btn,
+.User-form--unhappy2 {
+  height: 24px;
+  width: 116px;
+  outline: none;
+  background-color: $field;
+  color: $font-inactive;
+  border: 1px solid $font-inactive;
+  border-radius: 15px;
+  transition: 0.2s;
+  &:hover {
+    border: 1px solid $font;
+  }
+}
+.form {
+  height: 24px;
+  width: 300px;
+  border: 1px solid $font-inactive;
+  border-radius: 15px;
+  padding: 0 12px;
+  outline: none;
+  background-color: $field;
+  color: $font;
+  &:focus {
+    background-color: $field-active;
+  }
+  &:hover {
+  border: 1px solid $font;
+  }
+  &::placeholder {
+  color: $font-inactive;
+  }
+}
+em {
+  font-size: 13px;
+}
+.em {
+  color: $font-ininactive;
+  font-size: 16px;
+}

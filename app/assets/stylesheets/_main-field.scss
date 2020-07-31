@@ -1,12 +1,14 @@
 @import "modules/colors";
 @import "modules/height_width";
+@import "modules/background-image";
 
 .Main-field {
   height: inherit;
   width: calc(100vw - #{$side-width});
   background-color: $field;
   color: $font;
-  // border: 1px solid $field-border;
+  border-left: 1px solid $field-border;
+  position: relative;
   .Memo {
     height: inherit;
     width: inherit;
@@ -17,50 +19,104 @@
         height: inherit;
         width: calc(100% - #{$edit-btn});
       }
-      .Edit-btn {
-        height: inherit;
-        width: $edit-btn;
-        padding-right: 30px;
-        line-height: $header;
-        text-align: right;
-        color: $font-inactive;
-        position: relative;
-        .times-icon {
+    }
+    .Memo-field {
+      height: calc(100% - #{$header});
+      width: 100%;
+      position: relative;
+      .submit-btn {
+        display: block;
+        height: 1.2em;
+        width: 45px;
+        line-height: 1.2em;
+        outline: none;
+        border: none;
+        background-color: inherit;
+        color: inherit;
+        position: absolute;
+        top: 18px;
+        right: 15px;
+        transition: 0.2s;
+        &:hover,
+        &:active {
+          background-color: $accent;
+          color: $font-accent;
+          border-radius: 1em;
         }
-        .trash-icon {
-          line-height: 0;
-          position: absolute;
-          top: $header * 5 / 4;
-        }
-        .attention {
-          line-height: 0;
-          position: absolute;
-          top: $header * 4 / 3;
-          right: $edit-btn;
+        &:active {
+          border: 1px solid $accent;
         }
       }
     }
-    .Memo-field {
-        height: calc(100% - #{$header});
-        width: 100%;
+  }
+  .Edit-btn {
+    height: inherit;
+    width: $edit-btn;
+    padding-right: 15px;
+    line-height: $header;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .times-icon {
+      line-height: inherit;
+      display: block;
+    }
+    .trash-icon {
+      line-height: inherit;
+      display: block;
+      position: relative;
+      z-index: 10;
+    }
+  }
+  .Confirm {
+    position: relative;
+    z-index: 10;
+    .confirm-message {
+      height: 1.2em;
+      width: 120px;
+      position: absolute;
+      right: 55px;
+      top: calc(100vh - 40px);
+      text-align: center;
+      transition: 0.2s;
+      &:hover,
+      &:active {
+        background-color: #C74140;
+        color: $field-focus;
+        border-radius: 1em;
+      }
+      &:active {
+        border: 1px solid #C74140;
+      }
     }
   }
 }
-// .Title-form, .Main-form {
-//   height: 100%;
-//   width: 100%;
+
 .Title-form,
 .Memo-form {
   border: none;
   resize: none;
   outline: none;
-  background-color: $field;
-  color: $font;
-}
-.Title-form:focus,
-.Memo-form:focus {
   background-color: $field-active;
+  color: $font;
+  &:focus {
+    background-color: $field-focus;
+  }
+  &:placeholder {
+    color: $font-inactive;
+  }
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px $field-active inset;
+    &:focus {
+      -webkit-box-shadow: 0 0 0 1000px $field-focus inset;
+    }
+  }
 }
+
 
 .Title-form {
   height: inherit;

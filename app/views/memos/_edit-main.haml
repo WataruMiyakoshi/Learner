@@ -1,0 +1,4 @@
+.Edit-btn
+  = link_to icon( 'fas', 'times' ), root_path, class: "times-icon"
+  = link_to icon( 'far', 'trash-alt' ), memo_path(@memo.id), method: :get, class: "trash-icon"
+= render "form"

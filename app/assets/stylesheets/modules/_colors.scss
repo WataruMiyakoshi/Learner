@@ -3,33 +3,41 @@
   // フォントカラー
   --font: #555;
   --font-inactive: #999;
+  --font-ininactive: #CCC;
+  --font-accent: #3f3f3f;
 
   // アクセントカラー
-  --accent: #e7b964;
+  --accent: #f8d085;
 
   // Fieldカラー
   --field: #F8F8F8;
-  --field-active: #F5F5F5;
+  --field-active: #f3f3f3;
   --field-border: #DDD;
+  --field-focus: #f0f0f0;
   }
   @media (prefers-color-scheme: dark) {
   // フォントカラー
   --font: #B4B4B4;
   --font-inactive: #888;
+  --font-ininactive: #4A4A4A;
+  --font-accent: #282828;
 
   // アクセントカラー
   --accent: #e3b46b;
 
   // Fieldカラー
   --field: #242424;
-  --field-active: #2f2f2f;
+  --field-active: #2a2a2a;
   --field-border: #3A3A3A;
+  --field-focus: #2f2f2f;
   }
 }
 
 // フォント
 $font: var(--font);
 $font-inactive: var(--font-inactive);
+$font-ininactive: var(--font-ininactive);
+$font-accent: var(--font-accent);
 
 // アクセントカラー
 $accent: var(--accent);
@@ -38,27 +46,38 @@ $accent: var(--accent);
 $field: var(--field);
 $field-active: var(--field-active);
 $field-border: var(--field-border);
+$field-focus: var(--field-focus);
 
+// bodyカラー
+body {
+  background-color: $field;
+  height: 100vh;
+}
 
 // リンクカラー
 a {
-  transition: color 0.15s;
+  transition: color 0.2s;
   text-decoration: none;
 }
 a:hover {
   color: $font;
 }
-a, a:active {
+a,
+a:active {
   color: $font-inactive;
 }
 
 /* auto complete(chrome) */
-input:-webkit-autofill {
+input {
+  font-size: 13px;
+  &:-webkit-autofill {
   /* 背景色(background-colorではなくbox-shadow) */
   -webkit-box-shadow: 0 0 0 1000px $field inset;
 
   /* 文字色(colorではなく-webkit-text-fill-color) */
+  // -webkit-text-fill-color: $font;
   -webkit-text-fill-color: $font !important;
   /* 点滅しているアイツことカーソルくんの色(caret-color) */
   caret-color: $font;
+  }
 }

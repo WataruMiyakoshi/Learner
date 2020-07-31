@@ -1,7 +1,8 @@
 .Side-header
   .Side-box
     .Side-box__menu
-      = link_to icon('fas', 'bars' ), destroy_user_session_path, method: :delete
+    -# ハンバーガーメニューのiconは'bars'で指定します
+      = link_to icon('fas', 'sign-out-alt' ), destroy_user_session_path, method: :delete
     .Side-box__search
       = form_with( url: search_memos_path, method: :get, local: true, class: "Search-form" ) do |f|
         = f.text_field :keyword, placeholder: "search", class: "Search-form__area"
@@ -18,6 +19,6 @@
             -if memo.title.length > 14
               = "…"
           .Content__first
-            = memo.body[0..26]
-            -if memo.body.length > 27
+            = memo.body[0..19]
+            -if memo.body.length > 20
               = "…"

@@ -1,0 +1,6 @@
+.Edit-btn
+  = link_to icon( 'fas', 'times' ), root_path, class: "times-icon"
+  = link_to icon( 'fas', 'undo' ), edit_memo_path(@memo.id), method: :get, class: "trash-icon"
+.Confirm
+  = link_to "Delete this?", memo_path(@memo.id), method: :delete, class: "confirm-message"
+= render "form"

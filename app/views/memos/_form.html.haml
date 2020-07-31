@@ -1,0 +1,7 @@
+= form_with model: [@memo], html: {class: "Memo"}, local: true do |f|
+  .Main-header
+    .Title
+      = f.text_field :title, class: "Title-form", placeholder: "add title", maxlength: 45
+  .Memo-field
+    = f.text_area :body, class: "Memo-form", placeholder: "put memo", maxlength: 2000
+    = f.submit "Save", class: "submit-btn"
