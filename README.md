@@ -5,7 +5,7 @@ Very simple memo application for learners.
 ## Description
 ---
 `Learner`, the name that meant for programming learners and to be the application created for my programming learning.
-This is my first application used with Haml, Scss and Rails.
+This is my first application made with Haml, Scss and Rails.
 
 Use for...  
 * To make a note of what you have learned.
