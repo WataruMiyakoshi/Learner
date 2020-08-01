@@ -1,6 +1,6 @@
 # Learner
 
-Very simple memo application for learners.
+Very simple note application for learners.
 
 ## Description
 
