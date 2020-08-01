@@ -101,8 +101,8 @@
   &:focus {
     background-color: $field-focus;
   }
-  &:placeholder {
-    color: $font-inactive;
+  &::placeholder {
+    color: $font-ininactive;
   }
   &:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px $field-active inset;
@@ -128,4 +128,67 @@
 }
 .fa-chevron-left {
   display: none;
+}
+
+
+.notifications {
+  position: absolute;
+  width: 100vw;
+  z-index: 20;
+  text-align: center;
+  -moz-animation: erase 1500ms linear 0s forwards;
+  /* Firefox */
+  -webkit-animation: erase 1500ms linear 0s forwards;
+  /* Safari and Chrome */
+  -o-animation: erase 1500ms linear 0s forwards;
+  /* Opera */
+  animation: erase 1500ms linear 0s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  .notice {
+    background-color: blue;
+    color: yellow;
+  }
+  .alert {
+    background-color: $field;
+    color: $accent;
+  }
+}
+
+@keyframes erase {
+  0% {
+    height:0;
+    // width: inherit;
+    overflow:hidden;
+  }
+  25% {
+    height: 17px;
+    overflow: visible;
+  }
+  75% {
+    height: 17px;
+  }
+  100% {
+    height:0;
+    overflow:hidden;
+  }
+}
+@-webkit-keyframes erase {
+  0% {
+    height:0;
+    // width: inherit;
+    visibility: hidden;
+  }
+  25% {
+    height: 17px;
+    visibility: visible;
+  }
+  75% {
+    height: 17px;
+  }
+  100% {
+    height:0;
+    visibility: hidden;
+  }
 }

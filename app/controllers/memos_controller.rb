@@ -13,8 +13,10 @@ class MemosController < ApplicationController
     @memo = Memo.new(memo_params)
     if @memo.save
       redirect_to root_path
+    elsif @memo.title == "" && @memo.body == ""
+      redirect_to root_path
     else
-      # redirect_to new_memo_path
+      flash.now[:alert] = 'Oops!!'
       render new_memo_path
     end
   end
