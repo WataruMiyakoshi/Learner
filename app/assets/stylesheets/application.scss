@@ -7,6 +7,6 @@
 @import "side-field";
 @import "main-field";
 @import "devise-user";
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   @import "responsives/iphone";
-};
+}
