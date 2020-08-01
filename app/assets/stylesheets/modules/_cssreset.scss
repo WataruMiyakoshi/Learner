@@ -1,5 +1,9 @@
 * {
 	font-family: "Terminal", "Arial", "メイリオ";
+	&:focus {
+		outline: none;
+		color: $font;
+	}
 }
 /*
 	TODO will need to remove settings on HTML since we can't namespace it.
