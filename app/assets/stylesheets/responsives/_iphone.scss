@@ -1,0 +1,112 @@
+// index, search
+.Index-side-field {
+  width: 100%;
+  .Side-header {
+    height: $header-iphone;
+    line-height: $header-iphone;
+    .Side-box {
+      padding: 0 20px;
+      font-size: 30px;
+      &__search {
+        .Search-form {
+          &__area {
+            height: 40px;
+            border: 1px solid $font-inactive;
+            border-radius: 1em;
+            padding: 0 15px;
+            outline: none;
+            background-color: $field;
+            color: $font;
+            font-size: 24px;
+          }
+          &__area:hover {
+            border: 1px solid $font;
+          }
+          &__area::placeholder {
+            color: $font-inactive;
+          }
+        }
+      }
+    }
+  }
+  .Side-content {
+    height: calc(100% - #{$header-iphone});
+  .Content-list {
+      .Content {
+        &__title,
+        &__first {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+.Index-main-field {
+  display: none;
+}
+
+// new, edit, show
+.iPhone-side-field {
+  display: none;
+}
+.Main-field {
+  width: 100%;
+  .Edit-btn {
+    visibility: hidden;
+    height: inherit;
+    width: inherit;
+    padding: 0 15px;
+    font-size: 30px;
+    line-height: $header-iphone;
+    flex-direction: initial;
+    align-items: initial;
+    .times-icon {
+      visibility: visible;
+    }
+    .trash-icon {
+      visibility: visible;
+    }
+  }
+  .Memo {
+    .Main-header {
+      height: $header-iphone;
+      .Title {
+        width: 100%;
+      }
+    }
+    .Memo-field {
+      height: calc(100% - #{$header-iphone});
+      .submit-btn {
+        width: 70px;
+        border: 1px solid $font;
+        border-radius: 1em;
+        font-size: 20px;
+      }
+    }
+  }
+  .Confirm {
+    .confirm-message {
+      width: 120px;
+      right: 0;
+      top: calc(#{$header-iphone} - 1.3em);
+      border: 1px solid $font;
+      border-radius: 1em;
+      font-size: 16px;
+    }
+  }
+}
+
+.Title-form {
+  height: inherit;
+  width: 100%;
+  padding: 0 60px;
+  line-height: $header-iphone;
+  font-size: 28px;
+  font-weight: bold;
+}
+.Memo-form {
+  height: 100%;
+  width: inherit;
+  padding: 15px;
+  font-size: 20px;
+}
