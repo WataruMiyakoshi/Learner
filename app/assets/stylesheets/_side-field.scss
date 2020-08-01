@@ -73,8 +73,8 @@
       &:hover {
         background-color: $field-focus;
       }
-      &:focus {
-        background-color: $accent;
+      &:focus-within {
+        background-color: $field-focus;
       }
     }
   }
