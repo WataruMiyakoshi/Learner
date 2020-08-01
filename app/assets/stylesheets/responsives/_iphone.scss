@@ -5,7 +5,7 @@
     height: $header-iphone;
     line-height: $header-iphone;
     .Side-box {
-      padding: 0 20px;
+      padding: 10px 20px 0;
       font-size: 30px;
       &__search {
         .Search-form {
@@ -52,35 +52,19 @@
 .Main-field {
   width: 100%;
   .Edit-btn {
-    visibility: hidden;
-    height: inherit;
-    width: inherit;
-    padding: 0 15px;
     font-size: 30px;
-    line-height: $header-iphone;
-    flex-direction: initial;
-    align-items: initial;
-    .times-icon {
-      visibility: visible;
-    }
-    .trash-icon {
-      visibility: visible;
-    }
   }
   .Memo {
     .Main-header {
-      height: $header-iphone;
+      // height: $header-iphone;
       .Title {
         width: 100%;
       }
     }
     .Memo-field {
-      height: calc(100% - #{$header-iphone});
+      // height: calc(100% - #{$header-iphone});
       .submit-btn {
-        width: 70px;
-        border: 1px solid $font;
-        border-radius: 1em;
-        font-size: 20px;
+        visibility: hidden;
       }
     }
   }
@@ -88,7 +72,7 @@
     .confirm-message {
       width: 120px;
       right: 0;
-      top: calc(#{$header-iphone} - 1.3em);
+      top: $header;
       border: 1px solid $font;
       border-radius: 1em;
       font-size: 16px;
@@ -100,13 +84,22 @@
   height: inherit;
   width: 100%;
   padding: 0 60px;
-  line-height: $header-iphone;
+  // line-height: $header-iphone;
   font-size: 28px;
   font-weight: bold;
 }
 .Memo-form {
   height: 100%;
   width: inherit;
-  padding: 15px;
+  padding: 45px 15px 15px;
   font-size: 20px;
+}
+
+.fa-chevron-left {
+  display: initial;
+  visibility: visible;
+  font-size: 30px;
+  position: absolute;
+  right: calc(100vw - 45px);
+  top: -60px;
 }

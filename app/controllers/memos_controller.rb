@@ -12,7 +12,7 @@ class MemosController < ApplicationController
   def create
     @memo = Memo.new(memo_params)
     if @memo.save
-      redirect_to edit_memo_path(@memo)
+      redirect_to root_path
     else
       # redirect_to new_memo_path
       render new_memo_path
@@ -30,7 +30,7 @@ class MemosController < ApplicationController
   def update
     memo = Memo.find(params[:id])
     memo.update(memo_params)
-    redirect_to edit_memo_path
+    redirect_to root_path
   end
 
   def destroy

@@ -4,4 +4,6 @@
       = f.text_field :title, class: "Title-form", placeholder: "title", maxlength: 45
   .Memo-field
     = f.text_area :body, class: "Memo-form", placeholder: "body", maxlength: 2000
-    = f.submit "Save", class: "submit-btn"
+    = button_tag type: "submit", class: "submit-btn" do
+      = icon( 'fas', 'chevron-left' )
+      save
