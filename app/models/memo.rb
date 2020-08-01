@@ -1,6 +1,7 @@
 class Memo < ApplicationRecord
   belongs_to :user
   # belongs_to :tag
+  validates :title, presence: true
   validates :body, presence: true
   def self.search(search, current_user_id)
     return Memo.where(user_id: current_user_id) \

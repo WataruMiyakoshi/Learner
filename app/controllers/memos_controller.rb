@@ -13,10 +13,10 @@ class MemosController < ApplicationController
     @memo = Memo.new(memo_params)
     if @memo.save
       redirect_to edit_memo_path(@memo)
+    else
+      # redirect_to new_memo_path
+      render new_memo_path
     end
-    # else
-    #   render new_memo_path
-    # end
   end
 
   def show
