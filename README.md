@@ -15,6 +15,11 @@ Use for...
 Thanks for reading!
 ## Demo
 
+`new!`  
+*Supports responsive*
+![Learner-res](https://user-images.githubusercontent.com/67892455/89116301-51900a80-d4cd-11ea-9a6d-e1a06c15e9c7.gif)
+
+
 *How to post*
 ![Learner](https://user-images.githubusercontent.com/67892455/89055475-65d0ec00-d395-11ea-929c-1d2280153df5.gif)
 
