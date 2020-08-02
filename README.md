@@ -1,11 +1,11 @@
 # Learner
-シンプルなメモアプリ
+シンプルなメモアプリケーション
 
 A very simple note application for learners.
 
 ## Description
 
-[Learner](https://learner-memo-app.herokuapp.com/)という名前には、学習者向けのアプリを作りたいという思いと、私自身が学習者としての自覚をもってこのアプリ開発に望みたいという意味が込められいています。Rubyを使って開発した、私にとって初めての自己開発アプリです。
+[Learner](https://learner-memo-app.herokuapp.com/)という名前には、学習者向けのアプリケーションを作りたいという思いと、私自身が学習者としての自覚をもってこのアプリケーション開発に望みたいという意味が込められいています。Rubyを使って開発した、私にとって初めての自己開発アプリケーションです。
 
 《使用例》
 - 学習時のメモに…
