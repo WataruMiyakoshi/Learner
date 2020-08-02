@@ -1,18 +1,25 @@
 # Learner
+シンプルなメモアプリ
 
-Very simple note application for learners.
+A very simple note application for learners.
 
 ## Description
+
+[Learner](https://learner-memo-app.herokuapp.com/)という名前には、学習者向けのアプリを作りたいという思いと、私自身が学習者としての自覚をもってこのアプリ開発に望みたいという意味が込められいています。Rubyを使って開発した、私にとって初めての自己開発アプリです。
+
+《使用例》
+- 学習時のメモに…
+- SNSへのアウトプット前の学習内容をまとめるスペース代わりに…
+- ふとしたひらめきやアイデアをカタチに残すために…などなど
 
 [Learner](https://learner-memo-app.herokuapp.com/), the name that means for programming learners and to be the application created for my programming learning.
 This is my first application made out of Ruby.
 
-Use for...  
+Use for...
 * To make a note of what you have learned.
 * To summarize the learning contents before outputting to SNS.
-* To leave ideas and inspiration.
+* To leave ideas and inspiration...etc
 
-Thanks for reading!
 ## Demo
 
 `new!`  
@@ -33,7 +40,8 @@ Thanks for reading!
 
 (c) 2020 Wataru M.
 ## Author
+宮腰 わたる  
 Wataru Miyakoshi
 ## Acknowledgments
-Inspiration / Let's go to [Simplenote.com](https://simplenote.com/)  
-I love it!
+Let's go to [Simplenote.com](https://simplenote.com/)  
+私のお気に入りのアプリケーションです。I love it!
