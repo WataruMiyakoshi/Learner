@@ -1,9 +1,11 @@
 .Background {
-  margin-left: 18px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   &__image {
+    text-align: center;
+    font-size: 10px;
+    color: $font-ininactive;
   }
 }
