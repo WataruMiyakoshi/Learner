@@ -80,12 +80,12 @@
       transition: 0.2s;
       &:hover,
       &:active {
-        background-color: #C74140;
+        background-color: $caution;
         color: $field-focus;
         border-radius: 1em;
       }
       &:active {
-        border: 1px solid #C74140;
+        border: 1px solid $caution;
       }
     }
   }
@@ -136,23 +136,23 @@
   width: 100vw;
   z-index: 20;
   text-align: center;
-  -moz-animation: erase 1500ms linear 0s forwards;
+  -moz-animation: erase 2s ease 0s forwards;
   /* Firefox */
-  -webkit-animation: erase 1500ms linear 0s forwards;
+  -webkit-animation: erase 2s ease 0s forwards;
   /* Safari and Chrome */
-  -o-animation: erase 1500ms linear 0s forwards;
+  -o-animation: erase 2s ease 0s forwards;
   /* Opera */
-  animation: erase 1500ms linear 0s forwards;
+  animation: erase 2s ease 0s forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 
   .notice {
-    background-color: blue;
-    color: yellow;
+    background-color: $notice;
+    color: $font;
   }
   .alert {
-    background-color: $field;
-    color: $accent;
+    background-color: $accent;
+    color: $caution;
   }
 }
 
@@ -166,7 +166,7 @@
     height: 17px;
     overflow: visible;
   }
-  75% {
+  80% {
     height: 17px;
   }
   100% {
@@ -184,7 +184,7 @@
     height: 17px;
     visibility: visible;
   }
-  75% {
+  80% {
     height: 17px;
   }
   100% {

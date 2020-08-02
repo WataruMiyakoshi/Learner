@@ -16,7 +16,7 @@ class MemosController < ApplicationController
     elsif @memo.title == "" && @memo.body == ""
       redirect_to root_path
     else
-      flash.now[:alert] = 'Oops!!'
+      flash.now[:alert] = 'Oops!! Empty column of title or body'
       render new_memo_path
     end
   end
