@@ -5,7 +5,7 @@ Very simple note application for learners.
 ## Description
 
 [Learner](https://learner-memo-app.herokuapp.com/), the name that means for programming learners and to be the application created for my programming learning.
-This is my first application made with Haml, Scss and Rails.
+This is my first application made out of Ruby.
 
 Use for...  
 * To make a note of what you have learned.
