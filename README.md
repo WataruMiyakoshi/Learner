@@ -37,7 +37,8 @@ Use for...
 *How to search*
 ![Learner3](https://user-images.githubusercontent.com/67892455/89055512-75503500-d395-11ea-8b9a-fc48c86054c1.gif)
 ## Licence
-
+icon designed by [Selman Design](https://selmandesign.com/) / Adapted
+  
 (c) 2020 Wataru M.
 ## Author
 宮腰 わたる  
