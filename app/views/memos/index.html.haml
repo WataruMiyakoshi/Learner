@@ -2,11 +2,4 @@
   .Side-field.Index-side-field
     = render "side-field"
   .Main-field.Index-main-field
-    .Background
-      .Background__image
-        = image_tag src="owl_moon.PNG", size: "128x128", class: 'image'
-        %br
-          icon by
-          %b
-            =link_to 'Selman Design', "https://selmandesign.com/"
-          \/ Adapted
+    = render "background-image"
