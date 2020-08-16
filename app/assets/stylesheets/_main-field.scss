@@ -2,7 +2,7 @@
 
 .Main-field {
   height: inherit;
-  width: calc(100vw - #{$side-width});
+  width: 100%;
   background-color: $field;
   color: $font;
   border-left: 1px solid $field-border;
@@ -15,7 +15,7 @@
       display: flex;
       .Title {
         height: inherit;
-        width: calc(100% - #{$edit-btn});
+        width: 100%;
       }
     }
     .Memo-field {
@@ -118,7 +118,7 @@
 
 .Title-form {
   height: inherit;
-  width: calc(100vw - #{$side-width});
+  width: 100%;
   padding: 0  $edit-btn 0 15px;
   line-height: $header;
   font-size: 24px;
@@ -127,7 +127,7 @@
 .Memo-form {
   height: 100%;
   width: inherit;
-  padding: 15px;
+  padding: 15px $edit-btn 15px 15px;
 }
 .fa-chevron-left {
   display: none;
@@ -136,7 +136,7 @@
 
 .notifications {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   z-index: 20;
   text-align: center;
   -moz-animation: erase 2s ease 0s forwards;
@@ -162,7 +162,6 @@
 @keyframes erase {
   0% {
     height:0;
-    // width: inherit;
     overflow:hidden;
   }
   25% {
@@ -180,7 +179,6 @@
 @-webkit-keyframes erase {
   0% {
     height:0;
-    // width: inherit;
     visibility: hidden;
   }
   25% {
