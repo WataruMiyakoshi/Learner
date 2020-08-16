@@ -58,6 +58,9 @@
   .Content-list {
     height: 100%;
     overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     .Content {
       &__title{
         padding: 16px 20px 0;

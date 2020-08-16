@@ -110,6 +110,9 @@
       -webkit-box-shadow: 0 0 0 1000px $field-focus inset;
     }
   }
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 
